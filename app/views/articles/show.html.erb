@@ -1,0 +1,9 @@
+<%= link_to article_path(@article), method: :delete do %>
+  <i class="fa fa-trash"></i> Supprimer
+<% end %>
+
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+
+
+<%= link_to "Back to the blog", articles_path %>
